@@ -1,6 +1,6 @@
 body {
   font: 16px/1.6em sans-serif;
-  overflow-y: scroll;
+  //overflow-y: scroll;
 }
 
 * {
@@ -10,5 +10,13 @@ body {
 .container {
   max-width: 90rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
+}
+
+.test {
+  max-width: 600px;
+  font-size: 3rem;
+  p {
+    line-height: 1em;
+  }
 }

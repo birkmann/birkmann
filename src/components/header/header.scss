@@ -11,17 +11,26 @@ header.main {
   background: #fff;
   padding: 2rem 0;
   transition: all 0.15s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   @media (min-width: 60rem) {
     height: 50vh;
     min-height: 25rem;
   }
   .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
   .top {
     padding: 1rem 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
     .container {
       align-items: center;
     }
@@ -32,6 +41,7 @@ header.main {
       font-size: 1.25rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
+      transition: color 0.25s ease-in-out;
     }
     .burger {
       height: 65px;
@@ -87,15 +97,22 @@ header.main {
     }
   }
   main {
+    flex: 0 0 100%;
     .container {
       display: flex;
     }
     h2 {
-      font-size: 3rem;
+      font-size: 2rem;
       line-height: 1.2em;
       max-width: 50rem;
       transform: translateY(100%);
       animation: headerAnimation 0.75s ease-in-out 0.5s 1 forwards;
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+      @media (min-width: 60rem) {
+        font-size: 3rem;
+        margin: 0;
+      }
     }
   }
 }
