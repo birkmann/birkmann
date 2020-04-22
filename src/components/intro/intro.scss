@@ -1,15 +1,64 @@
+@keyframes introAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .intro {
-  background: #ccc;
   display: flex;
+  flex-wrap: wrap;
+  transition: all 0.15s ease-in-out;
   @media (min-width: 60rem) {
     height: 50vh;
     min-height: 25rem;
   }
   .item {
-    flex: 0 0 calc(100% / 3);
-    padding: 2rem;
+    flex: 0 0 100%;
     position: relative;
+    min-height: 50vh;
+    transform: translateY(100%);
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    @media (min-width: 60rem) {
+      flex: 0 0 calc(100% / 3);
+    }
+    .details {
+      color: #fff;
+      font-size: 2rem;
+      position: relative;
+      z-index: 1;
+      margin-top: auto;
+      transition: all 0.25s ease-in-out;
+      @media (min-width: 60rem) {
+        opacity: 0;
+      }
+      h3 {
+        margin: 0;
+        font-size: 2rem;
+      }
+    }
+    &:hover {
+      .image {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      .details {
+        opacity: 1;
+      }
+    }
     .image {
+      opacity: 0.75;
+      transition: all 0.25s ease-in-out;
       position: absolute;
       top: 0;
       left: 0;
@@ -20,18 +69,21 @@
     }
     &.fellliebe {
       .image {
-        background-image: url(https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+        background-image: url(https://images.unsplash.com/photo-1581391422953-4dd3707cf6d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
       }
+      animation: introAnimation 0.75s ease-in-out 0.5s 1 forwards;
     }
     &.limitbikes {
       .image {
-        background-image: url(https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+        background-image: url(https://www.cube.eu/media_ftp/BIKE_Bilder_2020/317200/details/317200_D6.jpg);
       }
+      animation: introAnimation 0.75s ease-in-out 0.75s 1 forwards;
     }
-    &.feyerabend {
+    &.car {
       .image {
-        background-image: url(https://images.unsplash.com/photo-1582639510494-c80b5de9f148?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80);
+        background-image: url(https://images.unsplash.com/photo-1544986342-f4f2e11b7c02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
       }
+      animation: introAnimation 0.75s ease-in-out 1s 1 forwards;
     }
   }
 }
