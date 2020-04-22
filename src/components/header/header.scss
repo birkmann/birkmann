@@ -1,0 +1,45 @@
+header.main {
+  background: #fff;
+  padding: 2rem 0;
+  @media (min-width: 60rem) {
+    height: 50vh;
+    min-height: 25rem;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top {
+    padding: 1rem 0;
+    .container {
+      align-items: center;
+    }
+    .logo {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.25rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+    .hamburger {
+      cursor: pointer;
+      span {
+        width: 40px;
+        height: 3px;
+        background: #000;
+        display: block;
+        margin: 6px;
+      }
+    }
+  }
+  main {
+    padding: 2rem 0;
+    h2 {
+      font-size: 3rem;
+      line-height: 1.2em;
+      max-width: 50rem;
+    }
+  }
+}

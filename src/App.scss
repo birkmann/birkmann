@@ -1,0 +1,14 @@
+body {
+  background: #000;
+  font: 16px/1.6em sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
