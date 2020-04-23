@@ -27,31 +27,65 @@
     align-items: center;
     height: 40vh;
     @media (min-width: 60rem) {
-      flex: 0 0 calc(100% / 3);
+      flex: 0 0 calc(100% / 4);
       height: 100%;
+    }
+    &:nth-child(1) {
+      animation: introAnimation 0.75s ease-in-out 0.5s 1 forwards;
+    }
+    &:nth-child(2) {
+      animation: introAnimation 0.75s ease-in-out 0.75s 1 forwards;
+    }
+    &:nth-child(3) {
+      animation: introAnimation 0.75s ease-in-out 1s 1 forwards;
+    }
+    &:nth-child(4) {
+      animation: introAnimation 0.75s ease-in-out 1.25s 1 forwards;
     }
     a {
       text-decoration: none;
       color: inherit;
+      display: block;
+      height: 100%;
+      width: 100%;
     }
     .details {
       color: #fff;
-      font-size: 2rem;
       position: relative;
       z-index: 1;
       margin-top: auto;
       transition: all 0.25s ease-in-out;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
       @media (min-width: 60rem) {
         opacity: 0;
       }
       h3 {
-        margin: 0;
         font-size: 1.5rem;
+        line-height: 1.2em;
+        margin: 1rem 0;
         @media (min-width: 35rem) {
-          font-size: 1.75rem;
+          font-size: 1.5rem;
         }
         @media (min-width: 70rem) {
-          font-size: 2rem;
+          font-size: 1.75rem;
+        }
+      }
+      p {
+        margin: 0;
+        font-weight: bold;
+        position: relative;
+        &:before {
+          content: "";
+          width: 2rem;
+          height: 0.17rem;
+          background: #0062FF;
+          display: block;
+          position: absolute;
+          top: -0.5rem;
         }
       }
     }
@@ -79,19 +113,21 @@
       .image {
         background-image: url(https://images.unsplash.com/photo-1581391422953-4dd3707cf6d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
       }
-      animation: introAnimation 0.75s ease-in-out 0.5s 1 forwards;
     }
     &.limitbikes {
       .image {
         background-image: url(https://www.cube.eu/media_ftp/BIKE_Bilder_2020/317200/details/317200_D6.jpg);
       }
-      animation: introAnimation 0.75s ease-in-out 0.75s 1 forwards;
     }
     &.car {
       .image {
         background-image: url(https://images.unsplash.com/photo-1544986342-f4f2e11b7c02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
       }
-      animation: introAnimation 0.75s ease-in-out 1s 1 forwards;
+    }
+    &.test {
+      .image {
+        background-image: url(https://images.unsplash.com/photo-1562883812-707bac620592?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80);
+      }
     }
   }
 }
