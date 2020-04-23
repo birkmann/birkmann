@@ -20,7 +20,9 @@ function Header() {
             <a href='/' className='logo'>
               Birkmann
             </a>
-            <div className='burger' onClick={toggleMenu}>
+            <div className='nav-icon' onClick={toggleMenu}>
+              <span></span>
+              <span></span>
               <span></span>
             </div>
           </div>
