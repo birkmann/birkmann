@@ -13,7 +13,7 @@
   transition: all 0.15s ease-in-out;
   @media (min-width: 60rem) {
     height: 50vh;
-    min-height: 25rem;
+    min-height: 15rem;
     overflow: hidden;
   }
   .item {
@@ -28,7 +28,7 @@
     height: 40vh;
     @media (min-width: 60rem) {
       flex: 0 0 calc(100% / 3);
-      height: 50vh;
+      height: 100%;
     }
     a {
       text-decoration: none;
@@ -48,6 +48,9 @@
         margin: 0;
         font-size: 1.5rem;
         @media (min-width: 35rem) {
+          font-size: 1.75rem;
+        }
+        @media (min-width: 70rem) {
           font-size: 2rem;
         }
       }
