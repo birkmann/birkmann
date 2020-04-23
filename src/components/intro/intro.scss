@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    height: 40vh;
     @media (min-width: 60rem) {
       flex: 0 0 calc(100% / 3);
       height: 50vh;
@@ -46,7 +46,10 @@
       }
       h3 {
         margin: 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        @media (min-width: 35rem) {
+          font-size: 2rem;
+        }
       }
     }
     &:hover {

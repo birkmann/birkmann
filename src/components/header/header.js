@@ -31,26 +31,30 @@ function Header() {
           <div className='container'>
             <div className='col'>
               <nav className='main'>
-                <a href=''>Projekte</a>
-                <a href=''>Agentur</a>
-                <a href=''>Leistungen</a>
-                <a href=''>Kontakt</a>
-              </nav>
-              <nav className='sub'>
-                <a href=''>Blog</a>
+                <a href=''>
+                  <span>Projekte</span>
+                </a>
+                <a href=''>
+                  <span>Agentur</span>
+                </a>
+                <a href=''>
+                  <span>Leistungen</span>
+                </a>
+                <a href=''>
+                  <span>Kontakt</span>
+                </a>
               </nav>
             </div>
             <div className='col'>
               <div className='info'>
-                <h4>Sonthofen</h4>
-                <p>Dekan-Ried-Straße 16</p>
-                <p>87527 Sonthofen</p>
-                <p>
-                  <a href='tel:017643471769'>017643471769</a>
-                </p>
                 <p>
                   <a href='mailto:mail@birkmann.design'>mail@birkmann.design</a>
                 </p>
+                <p>
+                  <a href='tel:017643471769'>(+49)17643471769</a>
+                </p>
+                <p>Dekan-Ried-Straße 16</p>
+                <p>87527 Sonthofen</p>
               </div>
             </div>
           </div>
