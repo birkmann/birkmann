@@ -7,6 +7,28 @@
   }
 }
 
+@keyframes menuAnimation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menuLinkAnimation {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 header.main {
   background: #fff;
   padding: 2rem 0;
@@ -19,22 +41,22 @@ header.main {
     height: 50vh;
     min-height: 25rem;
   }
-  .container {
-    height: 75px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
   .top {
-    background: #fff;
-    padding: 1rem 0;
+    //background: #fff;
     position: fixed;
     z-index: 100;
     top: 0;
     width: 100%;
+    transition: all 0.25s ease-in-out;
+    body.open & {
+      background: none;
+    }
     .container {
+      height: 75px;
+      display: flex;
+      flex-wrap: wrap;
       align-items: center;
+      justify-content: space-between;
     }
     .logo {
       text-decoration: none;
@@ -44,6 +66,9 @@ header.main {
       letter-spacing: 0.25em;
       text-transform: uppercase;
       transition: color 0.25s ease-in-out;
+      body.open & {
+        color: #fff;
+      }
     }
     .nav-icon {
       width: 30px;
@@ -57,12 +82,15 @@ header.main {
         position: absolute;
         height: 3px;
         width: 100%;
-        background: #161616;
+        background: #000;
         opacity: 1;
         left: 0;
         border-radius: 1px;
         transform: rotate(0deg);
         transition: 0.25s ease-in-out;
+        body.open & {
+          background: #fff;
+        }
         &:nth-child(1) {
           top: 0px;
           body.open & {
@@ -82,6 +110,101 @@ header.main {
           body.open & {
             top: 10px;
             transform: rotate(-135deg);
+          }
+        }
+      }
+    }
+  }
+  .menu {
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    background: #000;
+    color: #fff;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    body.open & {
+      opacity: 1;
+      visibility: visible;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.15s ease-in-out;
+      &:hover {
+        color: #aaa;
+      }
+    }
+    .container {
+      height: 100vh;
+      max-width: 60rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      .col {
+        body.open & {
+          animation: menuAnimation 0.25s ease-in-out 0s 1 forwards;
+        }
+        .info {
+          text-align: right;
+          font-size: 1rem;
+          opacity: 0;
+          body.open & {
+            animation: menuLinkAnimation 1s ease-in-out 1.25s 1 forwards;
+          }
+          h4 {
+            font-size: 1.25rem;
+            margin: 0 0 1rem;
+          }
+          p {
+            margin: 0 0 0.15rem;
+          }
+        }
+        nav.main {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2rem;
+          a {
+            font-size: 3rem;
+            padding: 2rem 0;
+            font-family: serif;
+            transition: all 0.15s ease-in-out;
+            &:nth-child(1) {
+              opacity: 0;
+              body.open & {
+                animation: menuLinkAnimation 1s ease-in-out 0s 1 forwards;
+              }
+            }
+            &:nth-child(2) {
+              opacity: 0;
+              body.open & {
+                animation: menuLinkAnimation 1s ease-in-out 0.2s 1 forwards;
+              }
+            }
+            &:nth-child(3) {
+              opacity: 0;
+              body.open & {
+                animation: menuLinkAnimation 1s ease-in-out 0.4s 1 forwards;
+              }
+            }
+            &:nth-child(4) {
+              opacity: 0;
+              body.open & {
+                animation: menuLinkAnimation 1s ease-in-out 0.6s 1 forwards;
+              }
+            }
+          }
+        }
+        nav.sub {
+          font-size: 1.2rem;
+          opacity: 0;
+          body.open & {
+            animation: menuLinkAnimation 1s ease-in-out 1s 1 forwards;
           }
         }
       }

@@ -1,18 +1,13 @@
 .menu {
-  transition: all 0.5s ease-in-out;
-  transform: translateY(-101%);
   position: fixed;
-  z-index: 1;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #666;
-  @media (min-width: 60rem) {
-    flex-direction: row;
-  }
+  background: #000;
+  z-index: 999;
+  width: calc(100% / 3);
+  height: calc(100vh - 75px);
+  top: 75px;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.25s ease-in-out;
   body.open & {
     transform: translateY(0%);
   }
