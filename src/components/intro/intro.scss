@@ -27,7 +27,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 25vh;
+    @media (min-width: 37rem) {
+      flex: 0 0 calc(100% / 2);
+    }
     @media (min-width: 60rem) {
       flex: 0 0 calc(100% / 4);
       height: 100%;

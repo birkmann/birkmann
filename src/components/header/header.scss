@@ -11,7 +11,7 @@
 
 @keyframes headerSubTextAnimation {
   0% {
-    transform: translateY(10px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -28,6 +28,17 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes topAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 
@@ -80,6 +91,8 @@ header.main {
       letter-spacing: 0.25em;
       text-transform: uppercase;
       transition: color 0.25s ease-in-out;
+      opacity: 0;
+      animation: topAnimation 1s ease-in-out 0s 1 forwards;
       body.open & {
         color: #fff;
       }
@@ -88,6 +101,8 @@ header.main {
       display: flex;
       .lang {
         margin-right: 2rem;
+        opacity: 0;
+        animation: topAnimation 1s ease-in-out 0s 1 forwards;
         a {
           text-decoration: none;
           color: #000;
@@ -96,10 +111,11 @@ header.main {
       }
     }
     .nav-icon {
+      opacity: 0;
+      animation: topAnimation 1s ease-in-out 0s 1 forwards;
       width: 30px;
       height: 25px;
       position: relative;
-      transform: rotate(0deg);
       transition: all 0.4s ease-in-out;
       cursor: pointer;
       span {
@@ -279,14 +295,18 @@ header.main {
   main {
     flex: 0 0 100%;
     padding-top: 5vh;
+    padding-bottom: 5vh;
+    @media (min-width: 60rem) {
+      padding-bottom: 0;
+    }
     .container {
       display: flex;
     }
     .text-box {
-      transform: translateY(100px);
-      animation: headerAnimation 0.75s ease-in-out 0.5s 1 forwards;
       @media (min-width: 60rem) {
         max-width: 35rem;
+        transform: translateY(100px);
+        animation: headerAnimation 0.75s ease-in-out 0.5s 1 forwards;
       }
       @media (min-width: 85rem) {
         max-width: 40rem;
@@ -294,8 +314,12 @@ header.main {
       h2 {
         font-size: 2rem;
         line-height: 1.2em;
-        margin-top: 10rem;
-        margin-bottom: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        @media (min-width: 60rem) {
+          margin-top: 10rem;
+          margin-bottom: 5rem;
+        }
         span {
           overflow: hidden;
           display: inline-block;
@@ -303,6 +327,9 @@ header.main {
           span {
             transform: translateY(100px);
             animation: headerAnimation 1s ease-in-out 0.25s 1 forwards;
+            @media (min-width: 60rem) {
+              animation: headerAnimation 1s ease-in-out 1.25s 1 forwards;
+            }
           }
         }
         @media (min-width: 60rem) {
@@ -315,15 +342,21 @@ header.main {
       }
       .sub {
         opacity: 0;
-        animation: headerSubTextAnimation 0.5s ease-in-out 1.75s 1 forwards;
+        animation: headerSubTextAnimation 0.5s ease-in-out 1s 1 forwards;
+        @media (min-width: 60rem) {
+          animation: headerSubTextAnimation 0.75s ease-in-out 2s 1 forwards;
+        }
       }
       p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 1.6em;
+        @media (min-width: 60rem) {
+          font-size: 1.3rem;
+        }
       }
       .btn {
         font-size: 1.2rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         text-decoration: none;
         color: $color-primary;
         display: inline-flex;

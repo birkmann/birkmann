@@ -1,7 +1,17 @@
+@keyframes bodyBackgroundFadeIn {
+  from {
+    background-color: #ffffff;
+  }
+  to {
+    background-color: #f6f6f6;
+  }
+}
+
 body {
   font: 16px/1.6em sans-serif;
   //overflow-y: scroll;
   background: #f6f6f6;
+  animation: bodyBackgroundFadeIn 1.5s ease-in-out 0s 1 forwards;
 }
 
 * {
