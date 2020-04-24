@@ -2,10 +2,21 @@
 
 @keyframes headerAnimation {
   0% {
-    transform: translateY(100%);
+    transform: translateY(100px);
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@keyframes headerSubTextAnimation {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -272,7 +283,7 @@ header.main {
       display: flex;
     }
     .text-box {
-      transform: translateY(100%);
+      transform: translateY(100px);
       animation: headerAnimation 0.75s ease-in-out 0.5s 1 forwards;
       @media (min-width: 60rem) {
         max-width: 35rem;
@@ -285,6 +296,15 @@ header.main {
         line-height: 1.2em;
         margin-top: 10rem;
         margin-bottom: 5rem;
+        span {
+          overflow: hidden;
+          display: inline-block;
+          vertical-align: bottom;
+          span {
+            transform: translateY(100px);
+            animation: headerAnimation 1s ease-in-out 0.25s 1 forwards;
+          }
+        }
         @media (min-width: 60rem) {
           font-size: 2.25rem;
           margin: 0;
@@ -292,6 +312,10 @@ header.main {
         @media (min-width: 85rem) {
           font-size: 3rem;
         }
+      }
+      .sub {
+        opacity: 0;
+        animation: headerSubTextAnimation 0.5s ease-in-out 1.75s 1 forwards;
       }
       p {
         font-size: 1.3rem;

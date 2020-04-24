@@ -111,20 +111,40 @@ function Header() {
           <div className='container'>
             <div className='text-box'>
               <h2>
-                <span>Design</span> <span>und</span> <span>Kommunikation</span>{" "}
-                <span>für</span> <span>eine</span> <span>digitale</span>{" "}
-                <span>Welt.</span>
+                <span>
+                  <span>Design</span>
+                </span>{" "}
+                <span>
+                  <span>und</span>
+                </span>{" "}
+                <span>
+                  <span>Kommunikation</span>
+                </span>
+                <span>
+                  <span>für</span>
+                </span>{" "}
+                <span>
+                  <span>eine</span>
+                </span>{" "}
+                <span>
+                  <span>digitale</span>
+                </span>{" "}
+                <span>
+                  <span>Welt.</span>
+                </span>
               </h2>
-              <p>
-                Wir sind ein Team aus kreativen Designern, Entwicklern und
-                Marketing Experten aus dem Oberallgäu.
-              </p>
-              <a href='' className='btn'>
-                <div className='icon'>
-                  <img src={arrow} alt='Arrow' />
-                </div>
-                <div className='text'>Hallo sagen! :)</div>
-              </a>
+              <div className='sub'>
+                <p>
+                  Wir sind ein Team aus kreativen Designern, Entwicklern und
+                  Marketing Experten aus dem Oberallgäu.
+                </p>
+                <a href='' className='btn'>
+                  <div className='icon'>
+                    <img src={arrow} alt='Arrow' />
+                  </div>
+                  <div className='text'>Hallo sagen! :)</div>
+                </a>
+              </div>
             </div>
           </div>
         </main>
