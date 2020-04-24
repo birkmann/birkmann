@@ -9,6 +9,15 @@
   }
 }
 
+@keyframes introAnimationMobile {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 .intro {
   display: flex;
   flex-wrap: wrap;
@@ -21,31 +30,39 @@
   .item {
     flex: 0 0 100%;
     position: relative;
-    transform: translateY(100%);
     overflow: hidden;
     background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    height: 50vh;
     @media (min-width: 37rem) {
       flex: 0 0 calc(100% / 2);
     }
     @media (min-width: 60rem) {
+      transform: translateY(100%);
       flex: 0 0 calc(100% / 4);
       height: 100%;
     }
     &:nth-child(1) {
-      animation: introAnimation 0.75s ease-in-out 0.5s 1 forwards;
+      @media (min-width: 60rem) {
+        animation: introAnimation 0.75s ease-in-out 0.5s 1 forwards;
+      }
     }
     &:nth-child(2) {
-      animation: introAnimation 0.75s ease-in-out 0.75s 1 forwards;
+      @media (min-width: 60rem) {
+        animation: introAnimation 0.75s ease-in-out 0.75s 1 forwards;
+      }
     }
     &:nth-child(3) {
-      animation: introAnimation 0.75s ease-in-out 1s 1 forwards;
+      @media (min-width: 60rem) {
+        animation: introAnimation 0.75s ease-in-out 1s 1 forwards;
+      }
     }
     &:nth-child(4) {
-      animation: introAnimation 0.75s ease-in-out 1.25s 1 forwards;
+      @media (min-width: 60rem) {
+        animation: introAnimation 0.75s ease-in-out 1.25s 1 forwards;
+      }
     }
     a {
       text-decoration: none;
