@@ -104,6 +104,7 @@ header.main {
       display: flex;
       .lang {
         margin-right: 2rem;
+        font-size: 1rem;
         opacity: 0;
         animation: topAnimation 1s ease-in-out 0s 1 forwards;
         a {
