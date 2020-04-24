@@ -49,9 +49,12 @@ header.main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  @media (min-width: 60rem) and (min-height: 40rem) {
+  @media (min-width: 60rem) {
+    height: 60vh;
+    min-height: 20rem;
+  }
+  @media (min-width: 85rem) {
     height: 50vh;
-    min-height: 15rem;
   }
   .deco {
     position: fixed;
@@ -284,6 +287,15 @@ header.main {
               opacity: 0;
               body.open & {
                 animation: menuLinkAnimation 1.5s $ease-01 0.6s 1 forwards;
+              }
+            }
+            span {
+              display: block;
+              transition: all 0.2s ease-in-out;
+            }
+            &:hover {
+              span {
+                transform: translateX(0.75rem);
               }
             }
           }

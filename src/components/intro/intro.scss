@@ -23,9 +23,12 @@
   flex-wrap: wrap;
   transition: all 0.15s ease-in-out;
   @media (min-width: 60rem) {
-    height: 50vh;
+    height: 40vh;
     min-height: 15rem;
     overflow: hidden;
+  }
+  @media (min-width: 85rem) {
+    height: 50vh;
   }
   .item {
     flex: 0 0 100%;
