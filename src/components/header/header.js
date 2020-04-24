@@ -113,22 +113,28 @@ function Header() {
               <h2>
                 <span>
                   <span>Design</span>
-                </span>{" "}
+                </span>
+                &nbsp;
                 <span>
                   <span>und</span>
-                </span>{" "}
+                </span>
+                &nbsp;
                 <span>
                   <span>Kommunikation</span>
                 </span>
+                &nbsp;
                 <span>
                   <span>für</span>
-                </span>{" "}
+                </span>
+                &nbsp;
                 <span>
                   <span>eine</span>
-                </span>{" "}
+                </span>
+                &nbsp;
                 <span>
                   <span>digitale</span>
-                </span>{" "}
+                </span>
+                &nbsp;
                 <span>
                   <span>Welt.</span>
                 </span>

@@ -186,7 +186,7 @@ header.main {
     }
     .container {
       height: 100vh;
-      max-width: 60rem;
+      max-width: 45rem;
       display: flex;
       flex-direction: column;
       @media (min-width: 35rem) {
@@ -368,7 +368,6 @@ header.main {
       }
       .btn {
         font-size: 1.2rem;
-        margin-top: 1rem;
         text-decoration: none;
         color: $color-primary;
         display: inline-flex;
