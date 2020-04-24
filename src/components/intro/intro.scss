@@ -1,3 +1,5 @@
+@import "../../assets/styles/vars.scss";
+
 @keyframes introAnimation {
   0% {
     transform: translateY(100%);
@@ -82,7 +84,8 @@
           content: "";
           width: 2rem;
           height: 0.17rem;
-          background: #0062FF;
+          background: $color-primary;
+          //background: #0062ff;
           display: block;
           position: absolute;
           top: -0.5rem;
@@ -117,6 +120,7 @@
     &.limitbikes {
       .image {
         background-image: url(https://www.cube.eu/media_ftp/BIKE_Bilder_2020/317200/details/317200_D6.jpg);
+        //background-image: url(https://images.unsplash.com/photo-1564015544-9eabb62b0a91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
       }
     }
     &.car {

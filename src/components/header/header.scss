@@ -1,3 +1,5 @@
+@import "../../assets/styles/vars.scss";
+
 @keyframes headerAnimation {
   0% {
     transform: translateY(100%);
@@ -7,20 +9,9 @@
   }
 }
 
-@keyframes menuAnimation {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @keyframes menuLinkAnimation {
   0% {
-    transform: translateY(10px);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
@@ -37,7 +28,7 @@ header.main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  @media (min-width: 60rem) {
+  @media (min-width: 60rem) and (min-height: 40rem) {
     height: 50vh;
     min-height: 15rem;
   }
@@ -119,7 +110,7 @@ header.main {
     position: fixed;
     visibility: hidden;
     z-index: 1;
-    background: #000;
+    background: $menu-bg;
     color: #fff;
     left: 0;
     top: 0;
@@ -136,7 +127,7 @@ header.main {
       text-decoration: none;
       transition: all 0.15s ease-in-out;
       &:hover {
-        color: #0062FF;
+        color: $color-primary;
       }
     }
     .container {
@@ -151,9 +142,6 @@ header.main {
         justify-content: space-between;
       }
       .col {
-        body.open & {
-          animation: menuAnimation 0.25s ease-in-out 0s 1 forwards;
-        }
         .info {
           font-size: 1.2rem;
           opacity: 0;
@@ -162,7 +150,7 @@ header.main {
             margin-top: 0;
           }
           body.open & {
-            animation: menuLinkAnimation 1s ease-in-out 1s 1 forwards;
+            animation: menuLinkAnimation 1.5s $ease-01 0.6s 1 forwards;
           }
           h4 {
             font-size: 1.25rem;
@@ -171,10 +159,37 @@ header.main {
           p {
             margin: 0 0 0.5rem;
           }
-          a {
-            color: #0062FF;
-            &:hover {
-              text-decoration: underline;
+          .contact-links {
+            a {
+              border-bottom: 1px solid $color-primary;
+              &:hover {
+                color: $color-primary;
+              }
+            }
+          }
+          .address {
+            margin: 1.5rem 0;
+            display: block;
+          }
+          .sm-links {
+            display: flex;
+            padding-left: 0;
+            li {
+              list-style: none;
+              &:first-child {
+                margin-left: -0.75rem;
+              }
+              a {
+                padding: 0.75rem;
+                opacity: 0.5;
+                transition: all 0.15s ease-in-out;
+                &:hover {
+                  opacity: 1;
+                }
+                svg {
+                  fill: #fff;
+                }
+              }
             }
           }
         }
@@ -188,34 +203,39 @@ header.main {
           }
           a {
             font-size: 2rem;
+            font-weight: bold;
             padding: 1.5rem 0;
-            transition: all 0.15s ease-in-out;
+            transition: all 0.15s $ease-01;
             @media (min-width: 60rem) {
               font-size: 3rem;
               padding: 2rem 0;
             }
+            @media (min-width: 85rem) {
+              font-size: 4rem;
+              padding: 2.25rem 0;
+            }
             &:nth-child(1) {
               opacity: 0;
               body.open & {
-                animation: menuLinkAnimation 1s ease-in-out 0s 1 forwards;
+                animation: menuLinkAnimation 1.5s $ease-01 0.15s 1 forwards;
               }
             }
             &:nth-child(2) {
               opacity: 0;
               body.open & {
-                animation: menuLinkAnimation 1s ease-in-out 0.2s 1 forwards;
+                animation: menuLinkAnimation 1.5s $ease-01 0.3s 1 forwards;
               }
             }
             &:nth-child(3) {
               opacity: 0;
               body.open & {
-                animation: menuLinkAnimation 1s ease-in-out 0.4s 1 forwards;
+                animation: menuLinkAnimation 1.5s $ease-01 0.45s 1 forwards;
               }
             }
             &:nth-child(4) {
               opacity: 0;
               body.open & {
-                animation: menuLinkAnimation 1s ease-in-out 0.6s 1 forwards;
+                animation: menuLinkAnimation 1.5s $ease-01 0.6s 1 forwards;
               }
             }
           }
@@ -225,25 +245,42 @@ header.main {
   }
   main {
     flex: 0 0 100%;
+    padding-top: 5vh;
     .container {
       display: flex;
     }
-    h2 {
-      font-size: 2rem;
-      line-height: 1.2em;
-      max-width: 50rem;
+    .text {
       transform: translateY(100%);
       animation: headerAnimation 0.75s ease-in-out 0.5s 1 forwards;
-      margin-top: 10rem;
-      margin-bottom: 5rem;
       @media (min-width: 60rem) {
-        font-size: 2.25rem;
-        margin: 0;
         max-width: 35rem;
       }
       @media (min-width: 85rem) {
-        font-size: 3rem;
-        max-width: 50rem;
+        max-width: 40rem;
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: 1.2em;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        @media (min-width: 60rem) {
+          font-size: 2.25rem;
+          margin: 0;
+        }
+        @media (min-width: 85rem) {
+          font-size: 3rem;
+        }
+      }
+      p {
+        font-size: 1.3rem;
+        line-height: 1.6em;
+      }
+      .btn {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        display: block;
+        text-decoration: none;
+        color: $color-primary;
       }
     }
   }
