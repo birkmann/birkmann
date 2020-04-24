@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./intro.scss";
 
 function Intro() {
+  const showWork01 = () => {};
   return (
     <div className='intro'>
       <div className='item limitbikes'>
-        <a href='http://shop.limit-bikes.de/' target='_blank'>
+        <a href='#' onClick={showWork01}>
           <div className='details'>
             <h3>Limit Bikes</h3>
             <p>Fahrradgeschäft in Burgberg</p>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import arrow from "../../assets/images/right-arrow.svg";
 import "./header.scss";
 
 function Header() {
@@ -15,15 +16,23 @@ function Header() {
   return (
     <div>
       <header className='main'>
+        <div className='deco'>
+          <span>D</span>
+        </div>
         <div className='top'>
           <div className='container'>
             <a href='/' className='logo'>
               Birkmann
             </a>
-            <div className='nav-icon' onClick={toggleMenu}>
-              <span></span>
-              <span></span>
-              <span></span>
+            <div className='right'>
+              <span className='lang'>
+                <a href=''>EN</a>
+              </span>
+              <div className='nav-icon' onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +94,7 @@ function Header() {
                   </li>
                   <li>
                     <a href='https://www.linkedin.com/'>
-                      <svg width='17' height='16' theme='black'>
+                      <svg width='17' height='16'>
                         <path
                           data-name='LinkedIn'
                           d='M17.01 9.826v6.165H13.4v-5.755c0-1.447-.52-2.43-1.82-2.43a1.969 1.969 0 0 0-1.85 1.307 2.325 2.325 0 0 0-.13.872v6H6s.04-9.743 0-10.752h3.6v1.524a.072.072 0 0 1-.02.037h.02v-.037a3.6 3.6 0 0 1 3.26-1.776c2.37.005 4.15 1.541 4.15 4.845zM1.99.009a1.99 1.99 0 1 1 .05 3.978h-.02A1.99 1.99 0 1 1 1.99.009zM4.02 15.99H-.01v-11h4.03v11z'
@@ -100,14 +109,21 @@ function Header() {
         </div>
         <main>
           <div className='container'>
-            <div className='text'>
-              <h2>Design und Kommunikation für eine digitale Welt.</h2>
+            <div className='text-box'>
+              <h2>
+                <span>Design</span> <span>und</span> <span>Kommunikation</span>{" "}
+                <span>für</span> <span>eine</span> <span>digitale</span>{" "}
+                <span>Welt.</span>
+              </h2>
               <p>
                 Wir sind ein Team aus kreativen Designern, Entwicklern und
                 Marketing Experten aus dem Oberallgäu.
               </p>
               <a href='' className='btn'>
-                Sich kennen lernen.
+                <div className='icon'>
+                  <img src={arrow} alt='Arrow' />
+                </div>
+                <div className='text'>Hallo sagen! :)</div>
               </a>
             </div>
           </div>

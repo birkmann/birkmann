@@ -73,7 +73,7 @@
           font-size: 1.5rem;
         }
         @media (min-width: 70rem) {
-          font-size: 1.75rem;
+          font-size: 2rem;
         }
       }
       p {
@@ -82,13 +82,16 @@
         position: relative;
         &:before {
           content: "";
-          width: 2rem;
-          height: 0.17rem;
+          width: 3rem;
+          height: 0.16rem;
           background: $color-primary;
           //background: #0062ff;
           display: block;
           position: absolute;
           top: -0.5rem;
+        }
+        @media (min-width: 70rem) {
+          font-size: 1.25rem;
         }
       }
     }

@@ -21,7 +21,6 @@
 }
 
 header.main {
-  background: #fff;
   padding: 2rem 0;
   transition: all 0.15s ease-in-out;
   display: flex;
@@ -31,6 +30,19 @@ header.main {
   @media (min-width: 60rem) and (min-height: 40rem) {
     height: 50vh;
     min-height: 15rem;
+  }
+  .deco {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    font-size: 65vw;
+    line-height: 0.75em;
+    font-weight: bold;
+    color: #ffffff;
+    height: 50vh;
+    span:nth-child(1) {
+      transform: scaleX(-1);
+    }
   }
   .top {
     //background: #fff;
@@ -59,6 +71,17 @@ header.main {
       transition: color 0.25s ease-in-out;
       body.open & {
         color: #fff;
+      }
+    }
+    .right {
+      display: flex;
+      .lang {
+        margin-right: 2rem;
+        a {
+          text-decoration: none;
+          color: #000;
+          opacity: 0.5;
+        }
       }
     }
     .nav-icon {
@@ -203,16 +226,15 @@ header.main {
           }
           a {
             font-size: 2rem;
+            line-height: 1em;
             font-weight: bold;
             padding: 1.5rem 0;
             transition: all 0.15s $ease-01;
             @media (min-width: 60rem) {
               font-size: 3rem;
-              padding: 2rem 0;
             }
             @media (min-width: 85rem) {
               font-size: 4rem;
-              padding: 2.25rem 0;
             }
             &:nth-child(1) {
               opacity: 0;
@@ -249,7 +271,7 @@ header.main {
     .container {
       display: flex;
     }
-    .text {
+    .text-box {
       transform: translateY(100%);
       animation: headerAnimation 0.75s ease-in-out 0.5s 1 forwards;
       @media (min-width: 60rem) {
@@ -278,9 +300,30 @@ header.main {
       .btn {
         font-size: 1.2rem;
         margin-top: 2rem;
-        display: block;
         text-decoration: none;
         color: $color-primary;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.15s ease-in-out;
+        transform: translateX(-1.75rem);
+        &:hover {
+          transform: translateX(-0rem);
+          .icon {
+            transform: scale(1);
+          }
+        }
+        .icon {
+          margin-right: 0.5rem;
+          display: flex;
+          transform: scale(0);
+          transition: all 0.15s ease-in-out;
+          img {
+            width: 20px;
+          }
+        }
+        .text {
+          align-self: center;
+        }
       }
     }
   }
