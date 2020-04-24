@@ -7,6 +7,10 @@
   }
 }
 
+html {
+  text-rendering: optimizeLegibility;
+}
+
 body {
   font: 100%/1.6em sans-serif;
   background: #f6f6f6;
