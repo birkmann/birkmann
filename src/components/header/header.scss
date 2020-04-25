@@ -43,7 +43,7 @@
 }
 
 header.main {
-  padding: 2rem 0;
+  padding: 1rem 0;
   transition: all 0.15s ease-in-out;
   display: flex;
   flex-wrap: wrap;
@@ -57,21 +57,22 @@ header.main {
     height: 50vh;
   }
   .deco {
-    position: fixed;
-    top: 10%;
+    position: absolute;
+    top: 8rem;
     left: 50%;
     font-size: 65vw;
     line-height: 0.75em;
     font-weight: bold;
     color: #ffffff;
     height: 50vh;
+    @media (min-width: 60rem) {
+      top: 5rem;
+    }
     span:nth-child(1) {
       transform: scaleX(-1);
     }
   }
   .top {
-    //background: #fff;
-    position: fixed;
     z-index: 100;
     top: 0;
     width: 100%;
@@ -80,7 +81,6 @@ header.main {
       background: none;
     }
     .container {
-      height: 75px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -306,8 +306,6 @@ header.main {
   }
   main {
     flex: 0 0 100%;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
     @media (min-width: 60rem) {
       padding-bottom: 0;
     }
@@ -315,8 +313,11 @@ header.main {
       display: flex;
     }
     .text-box {
+      margin-bottom: 2rem;
+      max-width: 30rem;
       @media (min-width: 60rem) {
         max-width: 35rem;
+        margin-bottom: 0;
         transform: translateY(100px);
         animation: headerAnimation 0.75s ease-in-out 0.5s 1 forwards;
       }
@@ -360,10 +361,10 @@ header.main {
         }
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.6em;
         @media (min-width: 60rem) {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
       }
       .btn {

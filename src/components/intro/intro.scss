@@ -9,15 +9,6 @@
   }
 }
 
-@keyframes introAnimationMobile {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
 .intro {
   display: flex;
   flex-wrap: wrap;
@@ -50,25 +41,25 @@
       height: 100%;
     }
     &:nth-child(1) {
-      animation: introAnimationMobile 0.75s ease-in-out 0.5s 1 forwards;
+      animation: introAnimation 1.75s $ease-01 1s 1 forwards;
       @media (min-width: 60rem) {
         animation: introAnimation 0.75s ease-in-out 0.5s 1 forwards;
       }
     }
     &:nth-child(2) {
-      animation: introAnimationMobile 0.75s ease-in-out 0.75s 1 forwards;
+      animation: introAnimation 1.75s $ease-01 1.25s 1 forwards;
       @media (min-width: 60rem) {
         animation: introAnimation 0.75s ease-in-out 0.75s 1 forwards;
       }
     }
     &:nth-child(3) {
-      animation: introAnimationMobile 0.75s ease-in-out 1s 1 forwards;
+      animation: introAnimation 1.75s $ease-01 1.5s 1 forwards;
       @media (min-width: 60rem) {
         animation: introAnimation 0.75s ease-in-out 1s 1 forwards;
       }
     }
     &:nth-child(4) {
-      animation: introAnimationMobile 0.75s ease-in-out 1.25s 1 forwards;
+      animation: introAnimation 1.75s $ease-01 1.75s 1 forwards;
       @media (min-width: 60rem) {
         animation: introAnimation 0.75s ease-in-out 1.25s 1 forwards;
       }
@@ -107,7 +98,7 @@
         }
       }
       p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin: 0;
         font-weight: bold;
         position: relative;

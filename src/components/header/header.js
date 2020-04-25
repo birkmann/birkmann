@@ -114,7 +114,7 @@ function Header() {
                 <span>
                   <span>Design</span>
                 </span>
-                &nbsp;
+                
                 <span>
                   <span>und</span>
                 </span>
