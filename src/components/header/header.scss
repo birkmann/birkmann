@@ -58,7 +58,7 @@ header.main {
   }
   .deco {
     position: absolute;
-    top: 6rem;
+    top: 6.5rem;
     left: 50%;
     font-size: 65vw;
     line-height: 0.75em;
@@ -195,6 +195,9 @@ header.main {
         align-items: center;
         justify-content: space-between;
       }
+      @media (min-width: 75rem) {
+        max-width: 55rem;
+      }
       .col {
         .info {
           font-size: 1.2rem;
@@ -204,7 +207,7 @@ header.main {
             margin-top: 0;
           }
           body.open & {
-            animation: menuLinkAnimation 1.5s $ease-01 0.6s 1 forwards;
+            animation: menuLinkAnimation 1.5s $ease-01 0.75s 1 forwards;
           }
           h4 {
             font-size: 1.25rem;

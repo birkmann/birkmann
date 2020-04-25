@@ -145,7 +145,7 @@ function Header() {
                 <div className='icon'>
                   <img src={arrow} alt='Arrow' />
                 </div>
-                <div className='text'>Hallo sagen! :)</div>
+                <div className='text'>Kontakt</div>
               </a>
             </div>
           </div>
