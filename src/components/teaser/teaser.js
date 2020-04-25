@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import "./teaser.scss";
 
 function Teaser() {
-  const showWork01 = () => {};
   return (
     <div className='intro'>
       <div className='item limitbikes'>
-        <a href='#' onClick={showWork01}>
+        <a href='/projects'>
           <div className='details'>
             <h3>Limit Bikes</h3>
             <p>Fahrradgeschäft in Burgberg</p>
@@ -15,7 +14,7 @@ function Teaser() {
         </a>
       </div>
       <div className='item fellliebe'>
-        <a href='https://hundesalon-fellliebe.de/' target='_blank'>
+        <a href='/projects'>
           <div className='details'>
             <h3>FellLiebe</h3>
             <p>Der mobile Hundefriseur</p>
@@ -24,7 +23,7 @@ function Teaser() {
         </a>
       </div>
       <div className='item test'>
-        <a href='#'>
+        <a href='/projects'>
           <div className='details'>
             <h3>Kingpin Skateshop</h3>
             <p>Online Skateshop</p>
@@ -33,7 +32,7 @@ function Teaser() {
         </a>
       </div>
       <div className='item car'>
-        <a href='https://reifen-pabst.de/' target='_blank'>
+        <a href='/projects'>
           <div className='details'>
             <h3>Reifen Allgäu</h3>
             <p>Reifenservice in Immenstadt</p>
