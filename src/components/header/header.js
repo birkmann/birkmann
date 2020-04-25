@@ -40,10 +40,10 @@ function Header() {
                 <span>Projekte</span>
               </a>
               <a href='/services'>
-                <span>Leistungen</span>
+                <span>Services</span>
               </a>
               <a href='/about'>
-                <span>Agentur</span>
+                <span>Über uns</span>
               </a>
               <a href='/contact'>
                 <span>Kontakt</span>
