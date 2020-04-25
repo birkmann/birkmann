@@ -58,7 +58,7 @@ header.main {
   }
   .deco {
     position: absolute;
-    top: 8rem;
+    top: 6rem;
     left: 50%;
     font-size: 65vw;
     line-height: 0.75em;
@@ -66,6 +66,7 @@ header.main {
     color: #ffffff;
     height: 50vh;
     @media (min-width: 60rem) {
+      position: fixed;
       top: 5rem;
     }
     span:nth-child(1) {
@@ -259,7 +260,7 @@ header.main {
             line-height: 1em;
             font-weight: bold;
             padding: 1rem 0;
-            transition: all 0.15s $ease-01;
+            transition: all 0.15s ease-in-out;
             @media (min-width: 60rem) {
               font-size: 3rem;
             }
@@ -315,14 +316,15 @@ header.main {
     .text-box {
       margin-bottom: 2rem;
       max-width: 30rem;
+      margin-top: 3rem;
       @media (min-width: 60rem) {
         max-width: 35rem;
-        margin-bottom: 0;
+        margin: 0;
         transform: translateY(100px);
         animation: headerAnimation 0.75s ease-in-out 0.5s 1 forwards;
       }
       @media (min-width: 85rem) {
-        max-width: 40rem;
+        max-width: 41rem;
       }
       h2 {
         font-size: 2rem;
