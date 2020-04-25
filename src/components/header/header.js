@@ -13,6 +13,30 @@ function Header() {
       setMenu("closed");
     }
   };
+  const menuBg01 = () => {
+    document.querySelector("body").classList.add("menu-bg-01");
+  };
+  const menuBg01Remove = () => {
+    document.querySelector("body").classList.remove("menu-bg-01");
+  };
+  const menuBg02 = () => {
+    document.querySelector("body").classList.add("menu-bg-02");
+  };
+  const menuBg02Remove = () => {
+    document.querySelector("body").classList.remove("menu-bg-02");
+  };
+  const menuBg03 = () => {
+    document.querySelector("body").classList.add("menu-bg-03");
+  };
+  const menuBg03Remove = () => {
+    document.querySelector("body").classList.remove("menu-bg-03");
+  };
+  const menuBg04 = () => {
+    document.querySelector("body").classList.add("menu-bg-04");
+  };
+  const menuBg04Remove = () => {
+    document.querySelector("body").classList.remove("menu-bg-04");
+  };
   return (
     <header className='main'>
       <div className='top'>
@@ -33,19 +57,36 @@ function Header() {
         </div>
       </div>
       <div className='menu'>
+        <div className='bg-image'></div>
         <div className='container'>
           <div className='col'>
             <nav className='main'>
-              <a href='/projects'>
+              <a
+                href='/projects'
+                onMouseOver={menuBg01}
+                onMouseLeave={menuBg01Remove}
+              >
                 <span>Projekte</span>
               </a>
-              <a href='/services'>
+              <a
+                href='/services'
+                onMouseOver={menuBg02}
+                onMouseLeave={menuBg02Remove}
+              >
                 <span>Services</span>
               </a>
-              <a href='/about'>
+              <a
+                href='/about'
+                onMouseOver={menuBg03}
+                onMouseLeave={menuBg03Remove}
+              >
                 <span>Über uns</span>
               </a>
-              <a href='/contact'>
+              <a
+                href='/contact'
+                onMouseOver={menuBg04}
+                onMouseLeave={menuBg04Remove}
+              >
                 <span>Kontakt</span>
               </a>
             </nav>

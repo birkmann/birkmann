@@ -147,6 +147,31 @@ header.main {
     bottom: 0;
     opacity: 0;
     transition: all 0.25s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    .bg-image {
+      opacity: 0.2;
+      transition: all 0.25s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: 100%;
+      background-position: center;
+      body.menu-bg-01 & {
+        background-image: url(https://images.unsplash.com/photo-1581391422953-4dd3707cf6d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+      }
+      body.menu-bg-02 & {
+        background-image: url(https://www.cube.eu/media_ftp/BIKE_Bilder_2020/317200/details/317200_D6.jpg);
+      }
+      body.menu-bg-03 & {
+        background-image: url(https://images.unsplash.com/photo-1544986342-f4f2e11b7c02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+      }
+      body.menu-bg-04 & {
+        background-image: url(https://images.unsplash.com/photo-1562883812-707bac620592?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80);
+      }
+    }
     body.open & {
       opacity: 1;
       visibility: visible;
