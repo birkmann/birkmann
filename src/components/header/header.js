@@ -39,11 +39,11 @@ function Header() {
               <a href='/projects'>
                 <span>Projekte</span>
               </a>
-              <a href='/about'>
-                <span>Agentur</span>
-              </a>
               <a href='/services'>
                 <span>Leistungen</span>
+              </a>
+              <a href='/about'>
+                <span>Agentur</span>
               </a>
               <a href='/contact'>
                 <span>Kontakt</span>

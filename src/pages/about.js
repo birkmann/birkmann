@@ -6,7 +6,7 @@ function About() {
     <div>
       <Header />
       <main className='container'>
-        <h2>Agentur</h2>
+        <h2>Profil</h2>
       </main>
     </div>
   );
