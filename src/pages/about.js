@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../components/header/header";
 
-function Projects() {
+function About() {
   return (
     <div>
       <Header />
       <main className='container'>
-        <h2>Projekte</h2>
+        <h2>Agentur</h2>
       </main>
     </div>
   );
 }
 
-export default Projects;
+export default About;

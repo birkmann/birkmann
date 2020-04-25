@@ -13,10 +13,13 @@ import "./App.scss";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
+import Services from "./pages/services";
 
 const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/projects", name: "Projects", Component: Projects },
+  { path: "/about", name: "About", Component: Projects },
+  { path: "/services", name: "Services", Component: Services },
   { path: "/contact", name: "Contact", Component: Contact },
 ];
 

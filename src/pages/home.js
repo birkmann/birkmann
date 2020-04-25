@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../components/header/header";
 import IntroHome from "../components/introHome/introHome";
-import Intro from "../components/intro/intro";
+import Teaser from "../components/teaser/teaser";
 
 function HomePage() {
   return (
     <div>
       <Header />
       <IntroHome />
-      <Intro />
+      <Teaser />
     </div>
   );
 }

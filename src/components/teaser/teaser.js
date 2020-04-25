@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./intro.scss";
+import "./teaser.scss";
 
-function Intro() {
+function Teaser() {
   const showWork01 = () => {};
   return (
     <div className='intro'>
@@ -44,4 +44,4 @@ function Intro() {
     </div>
   );
 }
-export default Intro;
+export default Teaser;
