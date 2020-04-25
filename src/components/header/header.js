@@ -15,9 +15,6 @@ function Header() {
   };
   return (
     <header className='main'>
-      <div className='deco'>
-        <span>D</span>
-      </div>
       <div className='top'>
         <div className='container'>
           <a href='/' className='logo'>
@@ -39,16 +36,16 @@ function Header() {
         <div className='container'>
           <div className='col'>
             <nav className='main'>
-              <a href=''>
+              <a href='/projects'>
                 <span>Projekte</span>
               </a>
-              <a href=''>
+              <a href='/about'>
                 <span>Agentur</span>
               </a>
-              <a href=''>
+              <a href='/services'>
                 <span>Leistungen</span>
               </a>
-              <a href=''>
+              <a href='/contact'>
                 <span>Kontakt</span>
               </a>
             </nav>
@@ -104,53 +101,6 @@ function Header() {
           </div>
         </div>
       </div>
-      <main>
-        <div className='container'>
-          <div className='text-box'>
-            <h2>
-              <span>
-                <span>Design</span>
-              </span>
-              &nbsp;
-              <span>
-                <span>und</span>
-              </span>
-              &nbsp;
-              <span>
-                <span>Kommunikation</span>
-              </span>
-              &nbsp;
-              <span>
-                <span>für</span>
-              </span>
-              &nbsp;
-              <span>
-                <span>eine</span>
-              </span>
-              &nbsp;
-              <span>
-                <span>digitale</span>
-              </span>
-              &nbsp;
-              <span>
-                <span>Welt.</span>
-              </span>
-            </h2>
-            <div className='sub'>
-              <p>
-                Wir sind ein Team aus kreativen Designern, Entwicklern und
-                Marketing Experten aus dem Oberallgäu.
-              </p>
-              <a href='' className='btn'>
-                <div className='icon'>
-                  <img src={arrow} alt='Arrow' />
-                </div>
-                <div className='text'>Kontakt</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </main>
     </header>
   );
 }
