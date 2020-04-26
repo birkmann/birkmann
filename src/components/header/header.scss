@@ -150,26 +150,26 @@ header.main {
     background-size: cover;
     background-position: center;
     .bg-image {
-      opacity: 0.2;
-      transition: all 0.25s ease-in-out;
+      opacity: 0.35;
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
+      transition: all 0.25s ease-in-out;
+      width: 50%;
       height: 100%;
-      background-size: 100%;
+      top: 0;
+      right: 0;
+      background-size: cover;
       background-position: center;
       body.menu-bg-01 & {
-        background-image: url(https://images.unsplash.com/photo-1581391422953-4dd3707cf6d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+        background-image: url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&h=800&q=80);
       }
       body.menu-bg-02 & {
-        background-image: url(https://www.cube.eu/media_ftp/BIKE_Bilder_2020/317200/details/317200_D6.jpg);
+        background-image: url(https://images.unsplash.com/photo-1556559322-b5071efadc88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&h=800&q=80);
       }
       body.menu-bg-03 & {
-        background-image: url(https://images.unsplash.com/photo-1544986342-f4f2e11b7c02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        background-image: url(https://images.unsplash.com/photo-1517259523158-407183e5d08a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&h=800&q=80);
       }
       body.menu-bg-04 & {
-        background-image: url(https://images.unsplash.com/photo-1562883812-707bac620592?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80);
+        background-image: url(https://images.unsplash.com/photo-1573703748442-3ba6f4203172?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&h=800&q=80);
       }
     }
     body.open & {
@@ -181,7 +181,7 @@ header.main {
       text-decoration: none;
       transition: all 0.15s ease-in-out;
       &:hover {
-        color: $color-primary;
+        //color: $color-primary;
       }
     }
     .container {
