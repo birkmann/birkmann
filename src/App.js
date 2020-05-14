@@ -1,28 +1,23 @@
-import React from "react";
-import { CSSTransition } from "react-transition-group";
-import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  NavLink,
-} from "react-router-dom";
+import React from 'react'
+import { CSSTransition } from 'react-transition-group'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
 
-import "./App.scss";
+import './App.scss'
 
-import Home from "./pages/home";
-import Projects from "./pages/projects";
-import About from "./pages/about";
-import Contact from "./pages/contact";
-import Services from "./pages/services";
+import Home from './pages/home'
+import Projects from './pages/projects'
+import About from './pages/about'
+import Contact from './pages/contact'
+import Services from './pages/services'
 
 const routes = [
-  { path: "/", name: "Home", Component: Home },
-  { path: "/projects", name: "Projects", Component: Projects },
-  { path: "/about", name: "About", Component: About },
-  { path: "/services", name: "Services", Component: Services },
-  { path: "/contact", name: "Contact", Component: Contact },
-];
+  { path: '/', name: 'Home', Component: Home },
+  { path: '/projects', name: 'Projects', Component: Home },
+  { path: '/about', name: 'About', Component: Home },
+  { path: '/services', name: 'Services', Component: Home },
+  { path: '/contact', name: 'Contact', Component: Home },
+]
 
 function App() {
   return (
@@ -48,7 +43,7 @@ function App() {
         </div>
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

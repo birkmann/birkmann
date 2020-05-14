@@ -1,4 +1,4 @@
-@import "../../assets/styles/vars.scss";
+@import '../../assets/styles/vars.scss';
 
 @keyframes headerAnimation {
   0% {
@@ -46,7 +46,7 @@ header.sub {
       display: flex;
     }
     .text-box {
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
       max-width: 30rem;
       @media (min-width: 60rem) {
         max-width: 35rem;

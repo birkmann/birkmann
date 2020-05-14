@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import arrow from "../../assets/images/right-arrow.svg";
-import "./introHome.scss";
+import React, { useState } from 'react'
+import arrow from '../../assets/images/right-arrow.svg'
+import './introHome.scss'
 
 function IntroHome() {
-  const [menu, setMenu] = useState("closed");
+  const [menu, setMenu] = useState('closed')
   return (
     <header className='sub'>
       <div className='deco'>
@@ -46,17 +46,17 @@ function IntroHome() {
                 Wir sind ein Team aus kreativen Designern, Entwicklern und
                 Marketing Experten aus dem Oberallgäu.
               </p>
-              <a href='' className='btn'>
+              <a href='mailto:mail@birkmann.design' className='btn'>
                 <div className='icon'>
                   <img src={arrow} alt='Arrow' />
                 </div>
-                <div className='text'>Kontakt</div>
+                <div className='text'>mail@birkmann.design</div>
               </a>
             </div>
           </div>
         </div>
       </main>
     </header>
-  );
+  )
 }
-export default IntroHome;
+export default IntroHome
