@@ -10,10 +10,12 @@
 }
 
 header.sub {
+  display: flex;
+  align-items: center;
   @media (min-width: 60rem) {
-    padding-top: 5rem;
+    //padding-top: 5rem;
     height: calc(60vh - 6.25rem);
-    min-height: 20rem;
+    min-height: 18rem;
   }
   @media (min-width: 85rem) {
     height: calc(50vh - 6.25rem);
