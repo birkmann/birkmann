@@ -42,10 +42,6 @@ function IntroHome() {
               </span>
             </h2>
             <div className='sub'>
-              <p>
-                Wir sind ein Team aus kreativen Designern, Entwicklern und
-                Marketing Experten aus dem Oberallgäu.
-              </p>
               <a href='mailto:mail@birkmann.design' className='btn'>
                 <div className='icon'>
                   <img src={arrow} alt='Arrow' />

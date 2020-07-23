@@ -4,6 +4,15 @@ import './teaser.scss'
 function Teaser() {
   return (
     <div className='intro'>
+      <div className='item brutscher'>
+        <a href='https://brutscher-maschinenbau.de/' target='_blank'>
+          <div className='details'>
+            <h3>Brutscher Maschinenbau</h3>
+            <p>Innovation, Tradition und Leidenschaft</p>
+          </div>
+          <div className='image'></div>
+        </a>
+      </div>
       <div className='item limitbikes'>
         <a href='http://limit-bikes.de/' target='_blank'>
           <div className='details'>

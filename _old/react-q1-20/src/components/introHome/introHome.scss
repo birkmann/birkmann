@@ -1,4 +1,4 @@
-@import "../../assets/styles/vars.scss";
+@import '../../assets/styles/vars.scss';
 
 @keyframes headerAnimation {
   0% {
@@ -99,6 +99,7 @@ header.sub {
         }
       }
       .btn {
+        margin-top: 1rem;
         font-size: 1.2rem;
         text-decoration: none;
         color: $color-primary;
