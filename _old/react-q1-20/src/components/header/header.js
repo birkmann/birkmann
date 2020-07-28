@@ -1,42 +1,42 @@
-import React, { useState } from "react";
-import arrow from "../../assets/images/right-arrow.svg";
-import "./header.scss";
+import React, { useState } from 'react'
+import arrow from '../../assets/images/right-arrow.svg'
+import './header.scss'
 
 function Header() {
-  const [menu, setMenu] = useState("closed");
+  const [menu, setMenu] = useState('closed')
   const toggleMenu = () => {
-    if (menu === "closed") {
-      document.querySelector("body").classList.add("open");
-      setMenu("open");
+    if (menu === 'closed') {
+      document.querySelector('body').classList.add('open')
+      setMenu('open')
     } else {
-      document.querySelector("body").classList.remove("open");
-      setMenu("closed");
+      document.querySelector('body').classList.remove('open')
+      setMenu('closed')
     }
-  };
+  }
   const menuBg01 = () => {
-    document.querySelector("body").classList.add("menu-bg-01");
-  };
+    document.querySelector('body').classList.add('menu-bg-01')
+  }
   const menuBg01Remove = () => {
-    document.querySelector("body").classList.remove("menu-bg-01");
-  };
+    document.querySelector('body').classList.remove('menu-bg-01')
+  }
   const menuBg02 = () => {
-    document.querySelector("body").classList.add("menu-bg-02");
-  };
+    document.querySelector('body').classList.add('menu-bg-02')
+  }
   const menuBg02Remove = () => {
-    document.querySelector("body").classList.remove("menu-bg-02");
-  };
+    document.querySelector('body').classList.remove('menu-bg-02')
+  }
   const menuBg03 = () => {
-    document.querySelector("body").classList.add("menu-bg-03");
-  };
+    document.querySelector('body').classList.add('menu-bg-03')
+  }
   const menuBg03Remove = () => {
-    document.querySelector("body").classList.remove("menu-bg-03");
-  };
+    document.querySelector('body').classList.remove('menu-bg-03')
+  }
   const menuBg04 = () => {
-    document.querySelector("body").classList.add("menu-bg-04");
-  };
+    document.querySelector('body').classList.add('menu-bg-04')
+  }
   const menuBg04Remove = () => {
-    document.querySelector("body").classList.remove("menu-bg-04");
-  };
+    document.querySelector('body').classList.remove('menu-bg-04')
+  }
   return (
     <header className='main'>
       <div className='top'>
@@ -97,9 +97,6 @@ function Header() {
                 <p>
                   <a href='mailto:mail@birkmann.design'>mail@birkmann.design</a>
                 </p>
-                <p>
-                  <a href='tel:017643471769'>(+49)17643471769</a>
-                </p>
               </span>
               <span className='address'>
                 <p>Dekan-Ried-Straße 16</p>
@@ -143,6 +140,6 @@ function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }
-export default Header;
+export default Header
