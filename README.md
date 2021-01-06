@@ -1,1 +1,1 @@
-![Metrics](https://metrics.lecoq.io/birkmann?template=classic&isocalendar=1&languages=1&pagespeed=1&pagespeed.detailed=false&pagespeed.screenshot=false&isocalendar.duration=half-year&config.timezone=Europe%2FBerlin)
+
